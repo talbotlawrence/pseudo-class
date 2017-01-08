@@ -1,0 +1,30 @@
+/*
+This worked but I'm wondering if there is a better way to do it: line 22.
+n-child, add a 1 pixel border around every even numbered section element.
+*/
+
+li {
+	list-style-type: none;
+	display: inline-block;
+}
+
+span {
+	display: block;
+	border: 1px solid;
+	margin: 25px;
+}
+
+.n-child {
+	border: 4px solid;
+	border-color: blue;
+}
+
+.n-child section:nth-child(2n+3) {
+	border: 1px solid;
+	border-color: red;
+}
+
+/*.n-child section:nth-child(odd) {
+	border: 1px solid;
+	border-color: red;
+}*/
